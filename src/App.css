@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.carousel {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel .carousel-inner {
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-caption {
+    left: 5%;
+    text-align: left;
+    max-width: 500px;
+    right: auto;
+    padding: 5px;
+    padding-top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#NavCard {
+    background-color: rgb(1, 80, 171);
 }
 
-.App-link {
-  color: #61dafb;
+#top-nav {
+    background-color: #f5f5f7 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav-text {
+    color: #154c79 !important;
+}
+
+
+/* product detail page */
+
+#myCarousel .list-inline {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#myCarousel .carousel-indicators>li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indicators>li.active img {
+    opacity: 0.7;
 }
